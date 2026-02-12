@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="BOJ 1927 최소 힙 - Mon, Oct 19, 2020">
     <meta property="og:description" content="신기한 min heap 구현하기">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -57,7 +57,7 @@
 <p><a href="https://www.acmicpc.net/problem/1927">BOJ 1927</a>은 말 그대로 최소 힙을 구현하는 문제다.</p>
 <h2 id="풀이-1-stl-사용">풀이 1: STL 사용</h2>
 <p>cpp에서 min(max) heap은 <code>priority_queue</code>를 이용하면 된다.</p>
-<pre><code>#include &lt;cstdio&gt;
+<pre tabindex="0"><code>#include &lt;cstdio&gt;
 #include &lt;iostream&gt;
 #include &lt;algorithm&gt;
 #include &lt;queue&gt;
@@ -79,9 +79,9 @@ int main()
         cin &gt;&gt; num;
         if (num == 0) {
             if (q.size() == 0) {
-                cout &lt;&lt; &quot;0\n&quot;;
+                cout &lt;&lt; &#34;0\n&#34;;
             } else {
-                cout &lt;&lt; q.top() &lt;&lt; &quot;\n&quot;;
+                cout &lt;&lt; q.top() &lt;&lt; &#34;\n&#34;;
                 q.pop();
             }
         } else {
@@ -92,7 +92,7 @@ int main()
 }
 </code></pre><h2 id="풀이-2-직접-구현">풀이 2: 직접 구현</h2>
 <p>재미삼아 직접 구현을 해 보았다. 잘 돌아가다니 신기!</p>
-<pre><code>#include &lt;cstdio&gt;
+<pre tabindex="0"><code>#include &lt;cstdio&gt;
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
 #include &lt;algorithm&gt;
@@ -161,7 +161,7 @@ int main()
         int num;
         cin &gt;&gt; num;
         if (num == 0) {
-            cout &lt;&lt; pop(a) &lt;&lt; &quot;\n&quot;;
+            cout &lt;&lt; pop(a) &lt;&lt; &#34;\n&#34;;
         } else {
             push(a, num);
         }
@@ -169,9 +169,8 @@ int main()
 
     return 0;
 }
-
 </code></pre>
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

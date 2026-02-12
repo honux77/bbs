@@ -2,275 +2,270 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Honux BBS</title>
-    <link>https://honux77.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Honux BBS</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 03 Jan 2021 04:12:07 +0000</lastBuildDate>
-    
-	<atom:link href="https://honux77.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 07 Nov 2021 23:11:15 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>algorithm</title>
-      <link>https://honux77.github.io/tags/algorithm/</link>
+      <title>Smalltalk</title>
+      <link>http://localhost:1313/tags/smalltalk/</link>
+      <pubDate>Sun, 07 Nov 2021 23:11:15 +0000</pubDate>
+      <guid>http://localhost:1313/tags/smalltalk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Game</title>
+      <link>http://localhost:1313/tags/game/</link>
+      <pubDate>Mon, 05 Apr 2021 03:44:22 +0000</pubDate>
+      <guid>http://localhost:1313/tags/game/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diary</title>
+      <link>http://localhost:1313/tags/diary/</link>
+      <pubDate>Mon, 15 Mar 2021 11:45:55 +0000</pubDate>
+      <guid>http://localhost:1313/tags/diary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>일상다반사</title>
+      <link>http://localhost:1313/tags/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</link>
+      <pubDate>Mon, 15 Feb 2021 00:10:47 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basic</title>
+      <link>http://localhost:1313/tags/basic/</link>
+      <pubDate>Sun, 31 Jan 2021 17:45:55 +0000</pubDate>
+      <guid>http://localhost:1313/tags/basic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>http://localhost:1313/tags/history/</link>
+      <pubDate>Sun, 31 Jan 2021 17:45:55 +0000</pubDate>
+      <guid>http://localhost:1313/tags/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ps4</title>
+      <link>http://localhost:1313/tags/ps4/</link>
+      <pubDate>Sun, 10 Jan 2021 16:59:32 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ps4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>http://localhost:1313/tags/review/</link>
+      <pubDate>Sun, 10 Jan 2021 16:59:32 +0000</pubDate>
+      <guid>http://localhost:1313/tags/review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>http://localhost:1313/tags/algorithm/</link>
       <pubDate>Sun, 03 Jan 2021 04:12:07 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/algorithm/</guid>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>boj</title>
-      <link>https://honux77.github.io/tags/boj/</link>
+      <title>Boj</title>
+      <link>http://localhost:1313/tags/boj/</link>
       <pubDate>Sun, 03 Jan 2021 04:12:07 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/boj/</guid>
+      <guid>http://localhost:1313/tags/boj/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>implementation</title>
-      <link>https://honux77.github.io/tags/implementation/</link>
+      <title>Implementation</title>
+      <link>http://localhost:1313/tags/implementation/</link>
       <pubDate>Sun, 03 Jan 2021 04:12:07 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/implementation/</guid>
+      <guid>http://localhost:1313/tags/implementation/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>java</title>
-      <link>https://honux77.github.io/tags/java/</link>
+      <title>Java</title>
+      <link>http://localhost:1313/tags/java/</link>
       <pubDate>Sat, 02 Jan 2021 01:55:12 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/java/</guid>
+      <guid>http://localhost:1313/tags/java/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>study</title>
-      <link>https://honux77.github.io/tags/study/</link>
+      <title>Study</title>
+      <link>http://localhost:1313/tags/study/</link>
       <pubDate>Sat, 02 Jan 2021 01:55:12 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/study/</guid>
+      <guid>http://localhost:1313/tags/study/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>whiteship</title>
-      <link>https://honux77.github.io/tags/whiteship/</link>
+      <title>Whiteship</title>
+      <link>http://localhost:1313/tags/whiteship/</link>
       <pubDate>Sat, 02 Jan 2021 01:55:12 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/whiteship/</guid>
+      <guid>http://localhost:1313/tags/whiteship/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>programming</title>
-      <link>https://honux77.github.io/tags/programming/</link>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
       <pubDate>Sat, 02 Jan 2021 01:51:18 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/programming/</guid>
+      <guid>http://localhost:1313/tags/programming/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>blog</title>
-      <link>https://honux77.github.io/tags/blog/</link>
+      <title>Blog</title>
+      <link>http://localhost:1313/tags/blog/</link>
       <pubDate>Fri, 01 Jan 2021 03:39:40 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/blog/</guid>
+      <guid>http://localhost:1313/tags/blog/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>github</title>
-      <link>https://honux77.github.io/tags/github/</link>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
       <pubDate>Fri, 01 Jan 2021 03:39:40 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/github/</guid>
+      <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hugo</title>
-      <link>https://honux77.github.io/tags/hugo/</link>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Fri, 01 Jan 2021 03:39:40 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>javascript</title>
-      <link>https://honux77.github.io/tags/javascript/</link>
+      <title>Javascript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
       <pubDate>Tue, 15 Dec 2020 16:11:07 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/javascript/</guid>
+      <guid>http://localhost:1313/tags/javascript/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>typescript</title>
-      <link>https://honux77.github.io/tags/typescript/</link>
+      <title>Typescript</title>
+      <link>http://localhost:1313/tags/typescript/</link>
       <pubDate>Tue, 15 Dec 2020 16:11:07 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/typescript/</guid>
+      <guid>http://localhost:1313/tags/typescript/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>about</title>
-      <link>https://honux77.github.io/tags/about/</link>
+      <title>About</title>
+      <link>http://localhost:1313/tags/about/</link>
       <pubDate>Tue, 24 Nov 2020 01:26:11 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/about/</guid>
+      <guid>http://localhost:1313/tags/about/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>git</title>
-      <link>https://honux77.github.io/tags/git/</link>
+      <title>Git</title>
+      <link>http://localhost:1313/tags/git/</link>
       <pubDate>Tue, 24 Nov 2020 01:26:11 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/git/</guid>
+      <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>submodule</title>
-      <link>https://honux77.github.io/tags/submodule/</link>
+      <title>Submodule</title>
+      <link>http://localhost:1313/tags/submodule/</link>
       <pubDate>Tue, 24 Nov 2020 01:26:11 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/submodule/</guid>
+      <guid>http://localhost:1313/tags/submodule/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jvm</title>
-      <link>https://honux77.github.io/tags/jvm/</link>
+      <title>Jvm</title>
+      <link>http://localhost:1313/tags/jvm/</link>
       <pubDate>Tue, 17 Nov 2020 02:36:47 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/jvm/</guid>
+      <guid>http://localhost:1313/tags/jvm/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bfs</title>
-      <link>https://honux77.github.io/tags/bfs/</link>
+      <title>Bfs</title>
+      <link>http://localhost:1313/tags/bfs/</link>
       <pubDate>Tue, 17 Nov 2020 01:45:27 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/bfs/</guid>
+      <guid>http://localhost:1313/tags/bfs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>node</title>
-      <link>https://honux77.github.io/tags/node/</link>
+      <title>Node</title>
+      <link>http://localhost:1313/tags/node/</link>
       <pubDate>Mon, 16 Nov 2020 12:35:47 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/node/</guid>
+      <guid>http://localhost:1313/tags/node/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>oauth</title>
-      <link>https://honux77.github.io/tags/oauth/</link>
+      <title>Oauth</title>
+      <link>http://localhost:1313/tags/oauth/</link>
       <pubDate>Mon, 16 Nov 2020 12:35:47 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/oauth/</guid>
+      <guid>http://localhost:1313/tags/oauth/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kmp</title>
-      <link>https://honux77.github.io/tags/kmp/</link>
+      <title>Kmp</title>
+      <link>http://localhost:1313/tags/kmp/</link>
       <pubDate>Fri, 06 Nov 2020 01:56:58 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/kmp/</guid>
+      <guid>http://localhost:1313/tags/kmp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>string</title>
-      <link>https://honux77.github.io/tags/string/</link>
+      <title>String</title>
+      <link>http://localhost:1313/tags/string/</link>
       <pubDate>Fri, 06 Nov 2020 01:56:58 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/string/</guid>
+      <guid>http://localhost:1313/tags/string/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>heap</title>
-      <link>https://honux77.github.io/tags/heap/</link>
+      <title>Heap</title>
+      <link>http://localhost:1313/tags/heap/</link>
       <pubDate>Mon, 19 Oct 2020 23:09:08 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/heap/</guid>
+      <guid>http://localhost:1313/tags/heap/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>forestry</title>
-      <link>https://honux77.github.io/tags/forestry/</link>
+      <title>Forestry</title>
+      <link>http://localhost:1313/tags/forestry/</link>
       <pubDate>Tue, 29 Sep 2020 15:38:40 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/tags/forestry/</guid>
+      <guid>http://localhost:1313/tags/forestry/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>silver</title>
-      <link>https://honux77.github.io/tags/silver/</link>
+      <title>Silver</title>
+      <link>http://localhost:1313/tags/silver/</link>
       <pubDate>Tue, 29 Sep 2020 13:13:00 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/tags/silver/</guid>
+      <guid>http://localhost:1313/tags/silver/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vscode</title>
-      <link>https://honux77.github.io/tags/vscode/</link>
+      <title>Vscode</title>
+      <link>http://localhost:1313/tags/vscode/</link>
       <pubDate>Thu, 24 Sep 2020 10:28:21 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/tags/vscode/</guid>
+      <guid>http://localhost:1313/tags/vscode/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>windows</title>
-      <link>https://honux77.github.io/tags/windows/</link>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
       <pubDate>Thu, 24 Sep 2020 10:28:21 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/tags/windows/</guid>
+      <guid>http://localhost:1313/tags/windows/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wsl2</title>
-      <link>https://honux77.github.io/tags/wsl2/</link>
+      <title>Wsl2</title>
+      <link>http://localhost:1313/tags/wsl2/</link>
       <pubDate>Thu, 24 Sep 2020 10:28:21 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/tags/wsl2/</guid>
+      <guid>http://localhost:1313/tags/wsl2/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>theme</title>
-      <link>https://honux77.github.io/tags/theme/</link>
+      <title>Theme</title>
+      <link>http://localhost:1313/tags/theme/</link>
       <pubDate>Fri, 04 Sep 2020 12:00:23 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/tags/theme/</guid>
+      <guid>http://localhost:1313/tags/theme/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hello</title>
-      <link>https://honux77.github.io/tags/hello/</link>
+      <title>Hello</title>
+      <link>http://localhost:1313/tags/hello/</link>
       <pubDate>Mon, 31 Aug 2020 11:35:58 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/tags/hello/</guid>
+      <guid>http://localhost:1313/tags/hello/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

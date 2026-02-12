@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="BOJ 9205 맥주 마시면서 걸어가기 - Tue, Nov 17, 2020">
     <meta property="og:description" content="BFS로 풀었지만 다음에는 플로이드-와샬로 풀어보자.">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -57,7 +57,7 @@
 정해진 기간마다 맥주를 마시면서 걷다 맥주가 부족해지기 전에 가게에 들려 맥주를 리필하고, 목적지를 찾아갈 수 있는지 여부를 출력해주면 된다.</p>
 <h2 id="풀이">풀이</h2>
 <p>맥주가 떨어지기 전에 갈 수 있는 최대거리는 1000미터이므로 BFS를 이용해서 1000미터 이내의 슈퍼를 방문하고 목적지까지 갈 수 있는지 여부를 확인하는 방법을 풀었다.</p>
-<pre><code>using namespace std;
+<pre tabindex="0"><code>using namespace std;
 
 bool canWalk(pair&lt;int,int&gt; &amp;a, pair&lt;int,int&gt; &amp;b) {
     return abs(a.first - b.first) + abs(a.second - b.second) &lt;= 1000;
@@ -75,14 +75,14 @@ void bfs(vector&lt;pair&lt;int,int&gt;&gt; &amp;a) {
         for (int i = 1; i &lt; a.size(); i++) {
             if (!visited[i] &amp;&amp; canWalk(a[curr], a[i])) {
                 if (i == a.size() - 1) {
-                    cout &lt;&lt; &quot;happy\n&quot;;
+                    cout &lt;&lt; &#34;happy\n&#34;;
                     return;
                 }
                 q.push(i);
             }
         }
     }
-    cout &lt;&lt; &quot;sad\n&quot;;
+    cout &lt;&lt; &#34;sad\n&#34;;
 }
 
 int main()
@@ -122,7 +122,7 @@ int main()
 <li><a href="https://barefoot-coder.tistory.com/35">구글링으로 나온 블로그</a></li>
 </ul>
 
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

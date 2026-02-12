@@ -2,24 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>잡담 on Honux BBS</title>
-    <link>https://honux77.github.io/categories/%EC%9E%A1%EB%8B%B4/</link>
+    <link>http://localhost:1313/categories/%EC%9E%A1%EB%8B%B4/</link>
     <description>Recent content in 잡담 on Honux BBS</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Mon, 31 Aug 2020 11:35:58 +0900</lastBuildDate>
-    
-	<atom:link href="https://honux77.github.io/categories/%EC%9E%A1%EB%8B%B4/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/categories/%EC%9E%A1%EB%8B%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>첫 번째 글</title>
-      <link>https://honux77.github.io/post/my-first-post/</link>
+      <link>http://localhost:1313/post/my-first-post/</link>
       <pubDate>Mon, 31 Aug 2020 11:35:58 +0900</pubDate>
-      
-      <guid>https://honux77.github.io/post/my-first-post/</guid>
-      <description>Hello, Hugo 첫번째 글 N사 지인이 공유해 주신 하이텔 스타일 테마가 맘에 들어서 글을 하나 올려봤다.
-이번에는 꾸준히 글을 쓸 수 있을까?</description>
+      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;hello-hugo&#34;&gt;Hello, Hugo&lt;/h1&gt;&#xA;&lt;h2 id=&#34;첫번째-글&#34;&gt;첫번째 글&lt;/h2&gt;&#xA;&lt;p&gt;N사 지인이 공유해 주신 하이텔 스타일 테마가 맘에 들어서 글을 하나 올려봤다.&lt;/p&gt;&#xA;&lt;p&gt;이번에는 꾸준히 글을 쓸 수 있을까?&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

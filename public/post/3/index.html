@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="백기선 자바 스터디 3: 다양한 연산자 - Sat, Dec 5, 2020">
     <meta property="og:description" content="연산자에 대해 복습을 해 봅시다.">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -77,12 +77,12 @@
 <ul>
 <li><code>++, --</code></li>
 </ul>
-<pre><code>int a = 3;
+<pre tabindex="0"><code>int a = 3;
 int b = 3;
 a++ == 3; true
 ++b == 3; false
 </code></pre><h2 id="비트-연산자">비트 연산자</h2>
-<pre><code>&amp;: and
+<pre tabindex="0"><code>&amp;: and
 |: or
 ^: xor
 ~: bitwise compliment 보수 연산자(?) 비트의 1과 0을 바꿈
@@ -104,8 +104,8 @@ a++ == 3; true
 <li>and의 우선순위가 or 보다 우선순위가 높다. 이것도 조심해야 함!</li>
 </ul>
 <h2 id="instanceof">instanceof</h2>
-<pre><code>null instanceof Object //false
-String a = &quot;hello&quot;
+<pre tabindex="0"><code>null instanceof Object //false
+String a = &#34;hello&#34;
 a instanceof Object //true
 List &lt;Integer&gt; b = new ArrayList()&lt;&gt;;
 b instanceof List //true
@@ -125,25 +125,24 @@ b instanceof ArrayList //true
 <ul>
 <li>편한데 사용하지 말라고 권장하는 곳이 많다.</li>
 </ul>
-<pre><code>int a = x &gt; 3 ? 1 : 2
-
+<pre tabindex="0"><code>int a = x &gt; 3 ? 1 : 2
 </code></pre><h2 id="java-13-switch-연산자">Java 13 switch 연산자</h2>
 <ul>
 <li>구글링을 해 보니 <code>yield</code> 연산자가 추가되었다! python의 for -else 에 이어 매우 신기한 문법이 등장했다.</li>
 <li><code>-&gt;</code> 오퍼레이터도 추가됨</li>
 </ul>
-<pre><code>    Day day = Day.WEDNESDAY;    
+<pre tabindex="0"><code>    Day day = Day.WEDNESDAY;    
     System.out.println(
         switch (day) {
             case MONDAY, FRIDAY, SUNDAY -&gt; 6;
             case TUESDAY                -&gt; 7;
             case THURSDAY, SATURDAY     -&gt; 8;
             case WEDNESDAY              -&gt; 9;
-            default -&gt; throw new IllegalStateException(&quot;Invalid day: &quot; + day);
+            default -&gt; throw new IllegalStateException(&#34;Invalid day: &#34; + day);
         }
     );    
 </code></pre>
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="GitHub Action으로 HUGO Publish 쉽게 하기 - Tue, Sep 29, 2020">
     <meta property="og:description" content="깃헙 액션 좋다.">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -58,7 +58,7 @@
 <ul>
 <li>아래 내용으로 <code>.github/workflws</code> 아래에 publish.yml을 생성한다.</li>
 </ul>
-<pre><code>name: github pages
+<pre tabindex="0"><code>name: github pages
 
 on:
   push:
@@ -77,7 +77,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.75.1'
+          hugo-version: &#39;0.75.1&#39;
           # extended: true
 
       - name: Build
@@ -91,7 +91,7 @@ jobs:
 </code></pre><h2 id="저장소-설정">저장소 설정</h2>
 <p><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-first-deployment-with-github_token">배포를 위한 저장소 설정</a> 을 참고해서 deploy key와 secret key를 설정한다.</p>
 <h3 id="공개키-및-비밀키-생성">공개키 및 비밀키 생성</h3>
-<pre><code>ssh-keygen -t rsa -b 4096 -C &quot;$(git config user.email)&quot; -f gh-pages -N &quot;&quot;
+<pre tabindex="0"><code>ssh-keygen -t rsa -b 4096 -C &#34;$(git config user.email)&#34; -f gh-pages -N &#34;&#34;
 </code></pre><p><code>gh-pages.pub</code>는 공개키이고 <code>gh-pages</code>는 비밀키이다.</p>
 <h3 id="배포키-등록">배포키 등록</h3>
 <p>공개키 파일의 내용을 복사해서 배포 키에 붙여 넣는다. 이름은 적당히 지어주자.</p>
@@ -106,7 +106,7 @@ jobs:
 <li><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-first-deployment-with-github_token">배포를 위한 저장소 설정</a></li>
 </ul>
 
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

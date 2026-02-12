@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="[알고리즘] BOJ 5525 IOIOI  - Fri, Nov 6, 2020">
     <meta property="og:description" content="제목은 이상하지만 재미있는 문제">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -58,15 +58,15 @@
 <h3 id="try-1">Try 1</h3>
 <p>언뜻 보면 단순 문자열 비교를 통해서 풀 수 있을 것 같은 문제라 그렇게 풀어 보았다.</p>
 <p>생각해 보면 복잡도가 <code>O(n * m)</code> 이기 때문에 당연히 TE (시간초과) 가 발생한다.</p>
-<pre><code>using namespace std;
+<pre tabindex="0"><code>using namespace std;
 
 string pstr(int n) {
-    string o = &quot;IO&quot;;
-    string ans = &quot;&quot;;
+    string o = &#34;IO&#34;;
+    string ans = &#34;&#34;;
     for (int i = 0; i &lt; n; i++) {
         ans += o;
     }
-    return ans + &quot;I&quot;;
+    return ans + &#34;I&#34;;
 }
 
 int main()
@@ -86,19 +86,19 @@ int main()
         if (s.substr(i, psize) == pn) ans++;        
     }
 
-    cout &lt;&lt; ans &lt;&lt; &quot;\n&quot;;
+    cout &lt;&lt; ans &lt;&lt; &#34;\n&#34;;
     return 0;
 }
 </code></pre><h3 id="try-2">Try 2</h3>
 <p>결국 문자열 비교의 정석 KMP를 변형해서 적용했다. 비교대상 문자열이 일정하기 때문에 원래의 KMP보다 구현이 쉽다. KMP는 종만북 20장 즈음에도 나왔던 것 같은데, 문자열 문제가 종종 코딩 테스트에도 나오므로 숙지하면 좋을 것 같다. 개인적으로 KMP 알고리즘은 어렵지 않은데 실패함수를 효율적으로 구현하는 게 더 어려운 느낌이다.</p>
 <p><a href="https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/">KMP 참고링크</a></p>
-<pre><code>using namespace std;
+<pre tabindex="0"><code>using namespace std;
 
 int match(string &amp;s, int pos, int n, int jmp) {       
     int i = jmp; 
     for (;i &lt; 2 * n + 1; i++) {
-        if (i % 2 == 0 &amp;&amp; s[pos + i] != 'I') return i;
-        if (i % 2 == 1 &amp;&amp; s[pos + i] != 'O') return i;        
+        if (i % 2 == 0 &amp;&amp; s[pos + i] != &#39;I&#39;) return i;
+        if (i % 2 == 1 &amp;&amp; s[pos + i] != &#39;O&#39;) return i;        
     }
     return i;
 }
@@ -132,17 +132,16 @@ int main()
         }        
     }
 
-    cout &lt;&lt; ans &lt;&lt; &quot;\n&quot;;
+    cout &lt;&lt; ans &lt;&lt; &#34;\n&#34;;
     return 0;
 }
-
 </code></pre><h3 id="try-3">Try 3</h3>
 <p>페이스북 매일코딩 그룹에서 H님과 J님의 코드를 보니 더 간단히 풀 수 있다는 것을 알았다.</p>
 <ul>
 <li><a href="https://gist.github.com/jwvg0425/ca34f3472475d0ec9b3ec20bddeb6794">H님 소스</a></li>
 <li><a href="https://www.acmicpc.net/source/share/95ca1c35e2534cc98c6cdd482c98dd71">J님 소스</a></li>
 </ul>
-<pre><code>using namespace std;
+<pre tabindex="0"><code>using namespace std;
 
 int main()
 {
@@ -157,9 +156,9 @@ int main()
     int ans = 0;
 
     for(int i = 0; i &lt; s.size() - (2 * n  + 1); i++) {
-        if (s[i] == 'I') {
+        if (s[i] == &#39;I&#39;) {
             int p = 0;
-            while (s[i + 1] == 'O' &amp;&amp; s[i + 2] == 'I') {
+            while (s[i + 1] == &#39;O&#39; &amp;&amp; s[i + 2] == &#39;I&#39;) {
                 p++;
                 i+=2;
             }
@@ -169,14 +168,13 @@ int main()
         }
     }
     
-    cout &lt;&lt; ans &lt;&lt; &quot;\n&quot;;
+    cout &lt;&lt; ans &lt;&lt; &#34;\n&#34;;
     return 0;
 }
-
 </code></pre><p>재밌는 문제를 풀어서 풀이를 정리해 봤다.</p>
 <p>오늘도 즐거운 코딩 라이프!</p>
 
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

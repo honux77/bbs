@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="백기선 자바 스터디 2: 타입, 변수, 배열 - Sat, Jan 2, 2021">
     <meta property="og:description" content="What is type variable?">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -59,64 +59,64 @@
 <li><a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html">자바독</a></li>
 </ul>
 <table>
-<thead>
-<tr>
-<th>Data Type</th>
-<th>Default Value (for fields)</th>
-<th>min</th>
-<th>max</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>byte</td>
-<td>0</td>
-<td>-128</td>
-<td>127</td>
-</tr>
-<tr>
-<td>short</td>
-<td>0</td>
-<td>-32768</td>
-<td>32767</td>
-</tr>
-<tr>
-<td>int</td>
-<td>0</td>
-<td>-2^31</td>
-<td>2^31 - 1</td>
-</tr>
-<tr>
-<td>long</td>
-<td>0L</td>
-<td>-2^63</td>
-<td>2^63 -1</td>
-</tr>
-<tr>
-<td>float</td>
-<td>0.0f</td>
-<td>32bit single precision</td>
-<td>(IEEE754 참고)</td>
-</tr>
-<tr>
-<td>double</td>
-<td>0.0d</td>
-<td>64bit double precision</td>
-<td></td>
-</tr>
-<tr>
-<td>char</td>
-<td>&lsquo;\u0000&rsquo;</td>
-<td>&lsquo;\u0000&rsquo;</td>
-<td>&lsquo;\uffff&rsquo;</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>false</td>
-<td>false</td>
-<td>true</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Data Type</th>
+          <th>Default Value (for fields)</th>
+          <th>min</th>
+          <th>max</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>byte</td>
+          <td>0</td>
+          <td>-128</td>
+          <td>127</td>
+      </tr>
+      <tr>
+          <td>short</td>
+          <td>0</td>
+          <td>-32768</td>
+          <td>32767</td>
+      </tr>
+      <tr>
+          <td>int</td>
+          <td>0</td>
+          <td>-2^31</td>
+          <td>2^31 - 1</td>
+      </tr>
+      <tr>
+          <td>long</td>
+          <td>0L</td>
+          <td>-2^63</td>
+          <td>2^63 -1</td>
+      </tr>
+      <tr>
+          <td>float</td>
+          <td>0.0f</td>
+          <td>32bit single precision</td>
+          <td>(IEEE754 참고)</td>
+      </tr>
+      <tr>
+          <td>double</td>
+          <td>0.0d</td>
+          <td>64bit double precision</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>char</td>
+          <td>&lsquo;\u0000&rsquo;</td>
+          <td>&lsquo;\u0000&rsquo;</td>
+          <td>&lsquo;\uffff&rsquo;</td>
+      </tr>
+      <tr>
+          <td>boolean</td>
+          <td>false</td>
+          <td>false</td>
+          <td>true</td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>참고로 String 및 Object의 기본값은 null 이다.</li>
@@ -153,7 +153,7 @@
 <li>내부 블록은 외부 블록에서 선언된 변수의 참조가 가능하다.</li>
 <li>문득 생각나서 확인해 보니 closure가 있다.</li>
 </ul>
-<pre><code>        int x = 3;
+<pre tabindex="0"><code>        int x = 3;
         int[] a = {2, 4, 6, 8};
         Arrays.stream(a).forEach((i) -&gt; {
             System.out.println(i * x);
@@ -168,21 +168,21 @@
 <ul>
 <li>값의 범위가 작은 타입에서 큰 타입으로 캐스팅(A widening primitive conversion)이 필요할 경우 자동으로 캐스팅이 일어나는 현상</li>
 </ul>
-<pre><code>    int x = 3;
+<pre tabindex="0"><code>    int x = 3;
     double d = 0.3f + x;
 </code></pre><h2 id="타입-추론-var">타입 추론, var</h2>
 <ul>
 <li>자바 10부터 도입</li>
 <li>지역 변수에 한해 var 키워드 사용 가능</li>
 </ul>
-<pre><code>Map&lt;Integer, String&gt; map = new HashMap&lt;&gt;();
+<pre tabindex="0"><code>Map&lt;Integer, String&gt; map = new HashMap&lt;&gt;();
 var idToNameMap = new HashMap&lt;Integer, String&gt;();
-</code></pre><pre><code>var monsters = new ArrayList&lt;Monster&gt;();
+</code></pre><pre tabindex="0"><code>var monsters = new ArrayList&lt;Monster&gt;();
 //...
 for (var m: monsters) {
 }
 </code></pre>
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

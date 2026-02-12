@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
+<html lang="ko"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Honux BBS</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#000084" />
     <meta property="og:title" content="백기선 자바 스터디 1: JVM과 자바 실행 - Tue, Nov 17, 2020">
     <meta property="og:description" content="JVM으로 자바 코드를 실행해 보자.">
-    <meta property="og:image" content="https://honux77.github.io//img/hugo-og.png">
-    <link rel="icon" href="https://honux77.github.io//favicon.ico">
-    <link rel="canonical" href="https://honux77.github.io/">
+    <meta property="og:image" content="http://localhost:1313//img/hugo-og.png">
+    <link rel="icon" href="http://localhost:1313//favicon.ico">
+    <link rel="canonical" href="http://localhost:1313/">
     
     
 </head>
@@ -19,7 +19,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://honux77.github.io/">Honux BBS</a>
+            <a class="brand" href="http://localhost:1313/">Honux BBS</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -64,10 +64,10 @@
 <ul>
 <li>터미널에서 컴파일하는 방법이 가장 간단</li>
 </ul>
-<pre><code>javac &lt;옵션&gt; &lt;소스파일&gt;
+<pre tabindex="0"><code>javac &lt;옵션&gt; &lt;소스파일&gt;
 </code></pre><h3 id="유용한-옵션">유용한 옵션</h3>
 <p><code>javac --help</code> 로 옵션을 확인할 수 있다.</p>
-<pre><code> --class-path &lt;path&gt;, -classpath &lt;path&gt;, -cp &lt;path&gt;
+<pre tabindex="0"><code> --class-path &lt;path&gt;, -classpath &lt;path&gt;, -cp &lt;path&gt;
         Specify where to find user class files and annotation processors
   -d &lt;directory&gt;               Specify where to place generated class files
   -g                           Generate all debugging info
@@ -86,7 +86,7 @@
 <li><strong>단일 파일 소스로 직접 실행</strong></li>
 </ul>
 <p>꿀팁! 단일 파일로 실행할 경우 소스로부터 실행할 수 있다.</p>
-<pre><code>Usage: java [options] &lt;mainclass&gt; [args...]
+<pre tabindex="0"><code>Usage: java [options] &lt;mainclass&gt; [args...]
            (to execute a class)
    or  java [options] -jar &lt;jarfile&gt; [args...]
            (to execute a jar file)
@@ -106,14 +106,14 @@
 <li><a href="https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html">오라클 문서 링크</a> 를 보면 JVM의 인스트럭션 셋을 직접 볼 수 있는데 일반적인 기계어보다 약간 추상화되어 있어서 명령이 더 직관적이고 이해하기 쉽다.</li>
 </ul>
 <p>Hello.java</p>
-<pre><code>cat Hello.java
+<pre tabindex="0"><code>cat Hello.java
 public class Hello {
 	public static void main(String[] args) {
-		System.out.println(&quot;Hello, CodeSquad!\n&quot;);
+		System.out.println(&#34;Hello, CodeSquad!\n&#34;);
 	}
 }
 </code></pre><p>16진수 덤프</p>
-<pre><code>xxd Hello.class
+<pre tabindex="0"><code>xxd Hello.class
 00000000: cafe babe 0000 003a 001d 0a00 0200 0307  .......:........
 00000010: 0004 0c00 0500 0601 0010 6a61 7661 2f6c  ..........java/l
 00000020: 616e 672f 4f62 6a65 6374 0100 063c 696e  ang/Object...&lt;in
@@ -142,13 +142,13 @@ public class Hello {
 00000190: 000a 0002 0000 0003 0008 0004 0001 001b  ................
 000001a0: 0000 0002 001c                           ......
 </code></pre><p>javap로 디스어셈블</p>
-<pre><code>javap -c Hello
-Compiled from &quot;Hello.java&quot;
+<pre tabindex="0"><code>javap -c Hello
+Compiled from &#34;Hello.java&#34;
 public class Hello {
   public Hello();
     Code:
        0: aload_0
-       1: invokespecial #1                  // Method java/lang/Object.&quot;&lt;init&gt;&quot;:()V
+       1: invokespecial #1                  // Method java/lang/Object.&#34;&lt;init&gt;&#34;:()V
        4: return
 
   public static void main(java.lang.String[]);
@@ -192,7 +192,7 @@ public class Hello {
 <li>JDK: JRE + 컴파일러, 디버거 등 개발에 필요한 도구가 추가됨</li>
 </ul>
 
-    <h4><a href="https://honux77.github.io/"></a></h4>
+    <h4><a href="http://localhost:1313/"></a></h4>
 </div>
 
 

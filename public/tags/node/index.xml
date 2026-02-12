@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>node on Honux BBS</title>
-    <link>https://honux77.github.io/tags/node/</link>
-    <description>Recent content in node on Honux BBS</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Node on Honux BBS</title>
+    <link>http://localhost:1313/tags/node/</link>
+    <description>Recent content in Node on Honux BBS</description>
+    <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Mon, 16 Nov 2020 12:35:47 +0000</lastBuildDate>
-    
-	<atom:link href="https://honux77.github.io/tags/node/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/tags/node/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RFC 읽고 GitHub Oauth2 인증 구현해 보기</title>
-      <link>https://honux77.github.io/post/rfc-github-oauth2/</link>
+      <link>http://localhost:1313/post/rfc-github-oauth2/</link>
       <pubDate>Mon, 16 Nov 2020 12:35:47 +0000</pubDate>
-      
-      <guid>https://honux77.github.io/post/rfc-github-oauth2/</guid>
-      <description>최근 강의 준비를 위해 RFC6749를 읽었다.
-생각보다 설명이 잘 되어 있고 읽기가 편한 편이다.
-시험 삼아 별도 모듈 없이 직접 node.js + express로 구현을 해 봤다. 다행히 잘 된다.
-인증 과정 요약  GitHub(Authentication Server) 에서 제공하는 url을 통해 **사용자(resource owner)**는 **서비스(client)**가 scope로 미리 정의한 요청 권한을 직접 확인하고 grant한다. 결과물로 authorization code가 나온다. 서비스는 callback URL을 통해 사용자로부터 전달받은 code에 client id, secret을 함께 묶어서 인증 서버로 보내면 access token을 얻을 수 있다.</description>
+      <guid>http://localhost:1313/post/rfc-github-oauth2/</guid>
+      <description>&lt;p&gt;최근 강의 준비를 위해 &lt;a href=&#34;https://tools.ietf.org/html/rfc6749&#34;&gt;RFC6749&lt;/a&gt;를 읽었다.&lt;/p&gt;&#xA;&lt;p&gt;생각보다 설명이 잘 되어 있고 읽기가 편한 편이다.&lt;/p&gt;&#xA;&lt;p&gt;시험 삼아 별도 모듈 없이 직접 node.js + express로 구현을 해 봤다. 다행히 잘 된다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;인증-과정-요약&#34;&gt;인증 과정 요약&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub(Authentication Server)&lt;/strong&gt; 에서 제공하는 url을 통해 **사용자(resource owner)**는 **서비스(client)**가 scope로 미리 정의한 요청 권한을 직접 확인하고 grant한다. 결과물로 &lt;strong&gt;authorization code&lt;/strong&gt;가 나온다.&lt;/li&gt;&#xA;&lt;li&gt;서비스는 callback URL을 통해 사용자로부터 전달받은 code에 client id, secret을 함께 묶어서 인증 서버로 보내면 &lt;strong&gt;access token&lt;/strong&gt;을 얻을 수 있다.&lt;/li&gt;&#xA;&lt;li&gt;얻은 token을 이용해  &amp;lsquo;Authorization: bearer 토큰값&amp;rsquo; 헤더를 설정하고 &lt;code&gt;GET https://api.github.com/user&lt;/code&gt; 요청을 하면 정상적으로 **GitHub(resource server)**로 부터 정보를 얻을 수 있다.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;인증-과정&#34;&gt;인증 과정&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;     +----------+&#xD;&#xA;     | Resource |&#xD;&#xA;     |   Owner  |&#xD;&#xA;     |          |&#xD;&#xA;     +----------+&#xD;&#xA;          ^&#xD;&#xA;          |&#xD;&#xA;         (B)&#xD;&#xA;     +----|-----+          Client Identifier      +---------------+&#xD;&#xA;     |         -+----(A)-- &amp;amp; Redirection URI ----&amp;gt;|               |&#xD;&#xA;     |  User-   |                                 | Authorization |&#xD;&#xA;     |  Agent  -+----(B)-- User authenticates ---&amp;gt;|     Server    |&#xD;&#xA;     |          |                                 |               |&#xD;&#xA;     |         -+----(C)-- Authorization Code ---&amp;lt;|               |&#xD;&#xA;     +-|----|---+                                 +---------------+&#xD;&#xA;       |    |                                         ^      v&#xD;&#xA;      (A)  (C)                                        |      |&#xD;&#xA;       |    |                                         |      |&#xD;&#xA;       ^    v                                         |      |&#xD;&#xA;     +---------+                                      |      |&#xD;&#xA;     |         |&amp;gt;---(D)-- Authorization Code ---------&#39;      |&#xD;&#xA;     |  Client |          &amp;amp; Redirection URI                  |&#xD;&#xA;     |         |                                             |&#xD;&#xA;     |         |&amp;lt;---(E)----- Access Token -------------------&#39;&#xD;&#xA;     +---------+       (w/ Optional Refresh Token)&#xD;&#xA;&#xD;&#xA;   Note: The lines illustrating steps (A), (B), and (C) are broken into&#xD;&#xA;   two parts as they pass through the user-agent.&#xD;&#xA;&#xD;&#xA;                  Authorization Code Flow (출처: RFC6749)&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;깃헙-소스&#34;&gt;깃헙 소스&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/honux77/oauth2-node&#34;&gt;간단 예제 구현 저장소&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>
