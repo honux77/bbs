@@ -26,8 +26,13 @@ publishdir = "./public/"
 
    showhugo = true
 
+    # Loading animation settings
+    loadfastload = false
+    loadspeedfactor = 1.0
+    loadonepass = false
+
     # Urls for social networks
-    github = "https://github.com/honux77"
+    github = "https://github.com/honux77/"
 
 [menu]
   # This displays buttons in the navbar to access your contents
