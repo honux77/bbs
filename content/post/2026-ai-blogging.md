@@ -4,6 +4,7 @@ date: 2026-02-12T10:34:11+09:00
 draft: false
 tags: ["AI", "Copilot", "Hugo", "Agentic AI"]
 categories: ["blog"]
+image: "/images/amuro.png"
 ---
 
 
