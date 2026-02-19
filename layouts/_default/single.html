@@ -9,7 +9,7 @@
     {{/* Hits page view badge */}}
     {{ if .Site.Params.hitsEnabled }}
     <p>
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ .Permalink | urlize }}&count_bg=%2300AA00&title_bg=%23333333&title=views&edge_flat=true" alt="hits">
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ .Permalink | urlquery }}&count_bg=%2300AA00&title_bg=%23333333&title=views&edge_flat=true" alt="hits">
     </p>
     {{ end }}
 
