@@ -34,11 +34,7 @@ publishdir = "./public/"
     # Urls for social networks
     github = "https://github.com/honux77/"
 
-   # ─── Hits page view badge ───────────────────────────────────────────────────
-   # true 로 설정하면 포스트마다 조회수 배지가 표시됩니다
-   hitsEnabled = true
-
-   # ─── Goatcounter analytics ──────────────────────────────────────────────────
+   # ─── Goatcounter analytics + page view badge ────────────────────────────────
    # https://goatcounter.com 에서 가입 후 발급된 사이트 코드를 입력하세요
    goatcounterCode = "honux-jung"
 
