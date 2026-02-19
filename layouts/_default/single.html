@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="row-fluid navmargin">
+    <div class="page-header">
+        <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}</h1>
+    </div>
+    <p class="lead">{{ .Params.description }}</p>
+
+    {{/* Hits page view badge */}}
+    {{ if .Site.Params.hitsEnabled }}
+    <p>
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ .Permalink | urlize }}&count_bg=%2300AA00&title_bg=%23333333&title=views&edge_flat=true" alt="hits">
+    </p>
+    {{ end }}
+
+    {{ .Content }}
+
+    {{/* Giscus comments */}}
+    {{ partial "comments.html" . }}
+
+    <h4><a href="{{ .Site.BaseURL }}">{{ i18n "backtohome" }}</a></h4>
+</div>
+
+{{ end }}

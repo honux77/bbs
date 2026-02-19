@@ -34,6 +34,24 @@ publishdir = "./public/"
     # Urls for social networks
     github = "https://github.com/honux77/"
 
+   # ─── Hits page view badge ───────────────────────────────────────────────────
+   # true 로 설정하면 포스트마다 조회수 배지가 표시됩니다
+   hitsEnabled = true
+
+   # ─── Goatcounter analytics ──────────────────────────────────────────────────
+   # https://goatcounter.com 에서 가입 후 발급된 사이트 코드를 입력하세요
+   goatcounterCode = "honux-jung"
+
+   # ─── Giscus comments ────────────────────────────────────────────────────────
+   # https://giscus.app 에서 설정을 생성하세요
+   # 1. GitHub 저장소에서 Discussions 기능 활성화
+   # 2. https://giscus.app 에서 repo 입력 → 스크립트에서 값 복사
+   giscusRepo = "honux77/bbs"
+   giscusRepoId = "R_kgDOROT2IA"
+   giscusCategory = "Announcements"
+   giscusCategoryId = "DIC_kwDOROT2IM4C2wRu"
+   giscusTheme = "preferred_color_scheme"
+
 [menu]
   # This displays buttons in the navbar to access your contents
   [[menu.main]]
